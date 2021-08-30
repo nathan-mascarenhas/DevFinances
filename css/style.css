@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -6,13 +7,20 @@
 
 :root{
     --dark-blue:#363f5f;
+    --green:#49AA26;
+    --light-green: #3dd705;
+    --red: #e92929;
 }
+
+/* Header ===================== */
 
 header{
     background-color: #2D4A22;
     padding: 2rem 0 10rem;
     text-align: center;
 }
+
+/* Titles ===================== */
 
 h2 {
     margin-top: 3.2rem;
@@ -21,20 +29,92 @@ h2 {
     font-weight: normal;
 }
 
-#logo{
-    color: #FFFFFF;
-    font-weight: 100;
+/* Links & Buttons ===================== */
+a{
+    text-decoration: none;
+    color: var(--green);
 }
 
+a:hover{
+    color: var(--light-green);
+}
+
+button{
+    width: 100%;
+    height: 50px;
+
+    border: none;
+    color: white;
+
+    background-color: var(--green);
+
+    padding: 0;
+
+    border-radius: 0.25rem;
+
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--light-green);
+}
+
+.button.new{
+    display: inline-block;
+    margin-bottom: .8rem;
+}
+
+.button.cancel{
+    color: var(--red);
+    border: 2px var(--red) solid;
+    border-radius: 0.25rem;
+
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0.6;
+}
+
+.button.cancel:hover{
+    opacity: 1;
+}
+
+/* Body ===================== */
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #f0f2f5;
 }
 
+
+/* Read ===================== */
+
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
+
+}
+
+
+/* Container ===================== */
+
 .container{
     width: min(90vw, 800px);
     margin: auto;
 }
+
+
+/* Balance e Transaction ===================== */
 
 #balance{
     margin-top: -8rem;
@@ -44,6 +124,14 @@ body{
     margin-top: 0;
     color: white;
 }
+
+#transaction{
+    display: block;
+    overflow-x: auto;
+    width: 100%;
+}
+
+/* Cards ===================== */
 
 .card{
     background-color: #FFFFFF;
@@ -59,6 +147,9 @@ body{
 .card h3{
     font-weight: normal;
     font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .card p{
@@ -69,9 +160,11 @@ body{
 }
 
 .card.total{
-    background: #49AA26;
+    background: var(--green);
     color: white;
 }
+
+/* Table ===================== */
 
 #data-table{
     width: 100%;
@@ -100,8 +193,15 @@ table td{
 }
 
 table thead tr th:first-child,
-table tbody tr td:first-child{
+table tbody tr td:first-child
+{
     border-radius: 0.25rem 0 0 0.25rem;
+}
+
+table thead tr th:last-child,
+table tbody tr td:last-child
+{
+    border-radius: 0 0.25rem 0.25rem 0;
 }
 
 td.description{
@@ -113,12 +213,96 @@ td.income{
 }
 
 td.expense{
-    color: #e92929;
+    color: var(--red);
 }
+
+/* Modal ===================== */
+.modal-overlay{
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    top: 0;
+
+    background-color: rgba(0, 0, 0, 0.7);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    opacity: 0;
+    visibility: hidden;
+
+    z-index: 999;
+}
+
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal{
+    background-color: #F0F2f5;
+    padding: 2.4rem;
+    z-index: 1;
+}
+
+/* Form ===================== */
+#form{
+    max-width: 500px;
+}
+
+#form h2{
+    margin-top: 0;
+}
+
+input{
+    border: none;
+    border-radius: 0.2rem;
+
+    width: 100%;
+
+    padding: 0.8rem;
+}
+
+.input-group{
+    margin-top: 0.8rem;
+}
+
+.input-group small{
+    opacity: 0.4;
+}
+
+.input-group.actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-group.actions .button,
+.input-group.actions button{
+    width: 48%;
+}
+
+/* Footer ===================== */
 
 footer{
     text-align: center;
     padding: 4rem 0 2rem;
     color: var(--dark-blue);
     opacity: 0.6;
+}
+
+
+/* Responsive ===================== */
+@media (min-width: 800px) {
+    html{
+        font-size: 87.5%;
+    }
+
+    #balance{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
 }
