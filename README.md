@@ -5,9 +5,14 @@
   <a href="#memo-licença">Licença</a>
 </p>
 
-<h1 align="center">dev.fiances</h1>
+<h1 align="center">Dev.fiances</h1>
 
 ![image](https://user-images.githubusercontent.com/75588037/131756260-ccb60c9d-c57e-4b2d-9d40-bb56f85b2ecb.png)
+
+<h1 align="center">Responsividade</h1>
+
+![image](https://user-images.githubusercontent.com/75588037/131756468-6541e6c8-f0d1-4a77-9b53-dd0323a6ded5.png)
+
 
 🚀 Tecnologias
 
