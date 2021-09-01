@@ -11,7 +11,7 @@
 
 <h1 align="center">Responsividade</h1>
 
-<img src="https://user-images.githubusercontent.com/75588037/131756468-6541e6c8-f0d1-4a77-9b53-dd0323a6ded5.png">
+<img align="center" src="https://user-images.githubusercontent.com/75588037/131756468-6541e6c8-f0d1-4a77-9b53-dd0323a6ded5.png">
 
 
 🚀 Tecnologias
