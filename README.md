@@ -4,6 +4,9 @@
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
+
+![image](https://user-images.githubusercontent.com/75588037/131756260-ccb60c9d-c57e-4b2d-9d40-bb56f85b2ecb.png)
+
 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
