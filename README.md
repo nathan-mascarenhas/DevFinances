@@ -1,30 +1,20 @@
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;
 </p>
 
 <h1 align="center">Dev.fiances</h1>
 
-![image](https://user-images.githubusercontent.com/75588037/131756260-ccb60c9d-c57e-4b2d-9d40-bb56f85b2ecb.png)
-
-<h1 align="center">Responsividade</h1>
-
-<p align="center"><img src="https://user-images.githubusercontent.com/75588037/131756468-6541e6c8-f0d1-4a77-9b53-dd0323a6ded5.png"></p>
-
+![image](https://user-images.githubusercontent.com/75588037/170986202-6e8f2942-1ee4-4983-a567-96afaa69681a.png)
 
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- HTML
-- CSS
-- JavaScript
+- React
+- Sass
+- Firebase
 
 ## 💻 Projeto
 
-O dev.finances é uma aplicação de controle financeiro, onde é possível cadastrar e excluir transações e ver o saldo de entrada e saída 💰
-
-## 🔖 Layout
-
-Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/7Vu9DzUaCZIV4nibzkjgB4/dev.finance%24-Maratona-Discover). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+O Let Me Ask é uma aplicação de perguntas e respostas, utilizando o Firebase para utilização de contas google e sistema one page utilizando o React.
